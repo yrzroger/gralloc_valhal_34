@@ -3,20 +3,20 @@ gralloc_valhal34
 
 1.打开编译的模块
 
-  renamed:    driver/product/android/gralloc/Android.bp.disabled -> driver/product/android/gralloc/Android.bp
-  renamed:    driver/product/android/gralloc/build_compatibility/Android.bp.disabled.12 -> driver/product/android/gralloc/build_compatibility/Android.bp
-  renamed:    driver/product/android/gralloc/build_configs/Android.bp.disabled.release -> driver/product/android/gralloc/build_configs/Android.bp
-  renamed:    driver/product/android/gralloc/interfaces/aidl/Android.bp.disabled -> driver/product/android/gralloc/interfaces/aidl/Android.bp
-  renamed:    driver/product/android/gralloc/interfaces/libs/drmutils/Android.bp.disabled -> driver/product/android/gralloc/interfaces/libs/drmutils/Android.bp
-  renamed:    driver/product/android/gralloc/src/4.x/Android.bp.disabled -> driver/product/android/gralloc/src/4.x/Android.bp
-  renamed:    driver/product/android/gralloc/src/Android.bp.disabled -> driver/product/android/gralloc/src/Android.bp
-  renamed:    driver/product/android/gralloc/src/allocator/Android.bp.disabled -> driver/product/android/gralloc/src/allocator/Android.bp
-  renamed:    driver/product/android/gralloc/src/allocator/dma_buf_heaps/Android.bp.disabled -> driver/product/android/gralloc/src/allocator/dma_buf_heaps/Android.bp
-  renamed:    driver/product/android/gralloc/src/allocator/shared_memory/Android.bp.disabled -> driver/product/android/gralloc/src/allocator/shared_memory/Android.bp
-  renamed:    driver/product/android/gralloc/src/capabilities/Android.bp.disabled -> driver/product/android/gralloc/src/capabilities/Android.bp
-  renamed:    driver/product/android/gralloc/src/core/Android.bp.disabled -> driver/product/android/gralloc/src/core/Android.bp
-  renamed:    driver/product/android/gralloc/src/hidl_common/Android.bp.disabled -> driver/product/android/gralloc/src/hidl_common/Android.bp
-
+  renamed:    driver/product/android/gralloc/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/build_compatibility/Android.bp.disabled.12
+  renamed:    driver/product/android/gralloc/build_configs/Android.bp.disabled.release
+  renamed:    driver/product/android/gralloc/interfaces/aidl/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/interfaces/libs/drmutils/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/src/4.x/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/src/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/src/allocator/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/src/allocator/dma_buf_heaps/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/src/allocator/shared_memory/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/src/capabilities/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/src/core/Android.bp.disabled
+  renamed:    driver/product/android/gralloc/src/hidl_common/Android.bp.disabled
+  
 2. 切换到目录driver/product/android/gralloc/src/4.x
 
 3. 执行 mm 编译
