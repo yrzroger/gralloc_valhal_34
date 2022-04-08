@@ -1,0 +1,43 @@
+#
+# Copyright (C) 2016-2021 ARM Limited.
+#
+# Copyright (C) 2008 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+TOP_LOCAL_PATH := $(call my-dir)
+
+# Blueprint builds disable Android.mk use
+MALI_GRALLOC_API_TESTS?=0
+
+include $(TOP_LOCAL_PATH)/gralloc.version.mk
+
+# Build allocator for version 3.x and gralloc libhardware HAL for all previous versions.
+GRALLOC_MAPPER := 0
+include $(TOP_LOCAL_PATH)/src/Android.mk
+# Build mapper
+GRALLOC_MAPPER := 1
+include $(TOP_LOCAL_PATH)/src/Android.mk
+
+
+# Build service
+ifeq ($(GRALLOC_VERSION_MAJOR), 3)
+   $(info Build 3.0 IAllocator service.)
+   include $(TOP_LOCAL_PATH)/service/3.x/Android.mk
+endif
+
+# Build gralloc api tests.
+ifeq ($(MALI_GRALLOC_API_TESTS), 1)
+   $(info Build gralloc API tests.)
+   include $(TOP_LOCAL_PATH)/tests/Android.mk
+endif

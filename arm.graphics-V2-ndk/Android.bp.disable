@@ -1,0 +1,6 @@
+cc_prebuilt_library_shared {
+    name: "arm.graphics-V2-ndk_platform",
+    vendor: true,
+    srcs: ["arm.graphics-V2-ndk_platform.so"],
+    shared_libs: ["libbinder_ndk"], 
+}

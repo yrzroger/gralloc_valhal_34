@@ -1,0 +1,18 @@
+on post-fs
+    # No AFBC Vendor usage bit
+    setprop ro.vendor.arm.gralloc.no_afbc_usage_flags 0x20000000
+    setprop ro.vendor.arm.gralloc.no_afbc_usage_mask  0x60000000
+    # Force Back Buffer Vendor usage bit
+    setprop ro.vendor.arm.gralloc.force_back_buffer_usage_flags 0x40000000000000
+    setprop ro.vendor.arm.gralloc.force_back_buffer_usage_mask  0x40000000000000
+    # Shared Access Vendor usage bit
+    setprop ro.vendor.arm.gralloc.shared_access_usage_flags 0x10000000
+    setprop ro.vendor.arm.gralloc.shared_access_usage_mask  0x50000000
+    # RGBA AFRC Vendor usage bits                          16B        24B        32B
+    setprop ro.vendor.arm.gralloc.afrc_rgba_usage_flags "0x50000000,0x60000000,0x40000000"
+    setprop ro.vendor.arm.gralloc.afrc_rgba_usage_mask   0x70000000
+    # YUV AFRC Vendor usage bits                           16B        24B        32B
+    setprop ro.vendor.arm.gralloc.afrc_luma_usage_flags "0x50000000,0x60000000,0x40000000"
+    setprop ro.vendor.arm.gralloc.afrc_luma_usage_mask   0x70000000
+    setprop ro.vendor.arm.gralloc.afrc_chroma_usage_flags "0x100000000000000,0x80000000000000,0x180000000000000"
+    setprop ro.vendor.arm.gralloc.afrc_chroma_usage_mask   0x180000000000000
