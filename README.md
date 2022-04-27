@@ -35,6 +35,6 @@ gralloc_valhal34
 3. 执行 mm 编译
 
 4. 得到
-/vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-arm.so
-/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so
-/vendor/lib/arm.graphics-V2-ndk_platform.so
+/vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-arm.so   
+/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so   
+/vendor/lib/arm.graphics-V2-ndk_platform.so   
