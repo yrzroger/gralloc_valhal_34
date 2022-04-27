@@ -1,7 +1,7 @@
 # gralloc_valhal_34
 gralloc_valhal34
 
-1.打开编译的模块
+1.打开编译的模块   
 
   renamed:    driver/product/android/gralloc/Android.bp.disabled
   
@@ -30,11 +30,11 @@ gralloc_valhal34
   renamed:    driver/product/android/gralloc/src/hidl_common/Android.bp.disabled
   
   
-2. 切换到目录driver/product/android/gralloc/src/4.x
+2. 切换到目录driver/product/android/gralloc/src/4.x   
 
-3. 执行 mm 编译
+3. 执行 mm 编译   
 
-4. 得到
+4. 得到   
 /vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-arm.so   
 /vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so   
 /vendor/lib/arm.graphics-V2-ndk_platform.so   
